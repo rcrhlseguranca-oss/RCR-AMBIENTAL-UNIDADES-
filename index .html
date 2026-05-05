@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PESQUISAS LEANDRO GOMES</title>
+    <!-- Importando o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <ul class="slideshow">
+        <li>imagem01</li>
+        <li>imagem02</li>
+        <li>imagem03</li>
+        <li>imagem04</li>
+    </ul>
+
+    <div class="overlay">
+        <div class="menu-bar">
+            <ul>
+                <li onclick="goHome()"><i class="fa fa-home"></i> HOME</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div id="home-screen" class="screen active">
+                <h1>ESCOLHA A UNIDADE</h1>
+                <div class="unit-grid">
+                    <button class="btn-unit" onclick="openUnidade('TABOÃO DA SERRA-SP')">TABOÃO DA SERRA-SP</button>
+                    <button class="btn-unit" onclick="openUnidade('HORTOLANDIA-SP')">HORTOLANDIA-SP</button>
+                    <button class="btn-unit" onclick="openUnidade('RESENDE-RJ')">RESENDE-RJ</button>
+                    <button class="btn-unit" onclick="openUnidade('HIDROLÂNDIA-GO')">HIDROLÂNDIA-GO</button>
+					<button class="btn-unit" onclick="openUnidade('GTR')">GTR</button>
+                </div>
+            </div>
+
+            <div id="unit-screen" class="screen">
+                <h2 id="current-unit-name"></h2>
+                <div class="links-list">
+                    <a id="link-doc" href="#" target="_blank" class="link-card"><i class="fa fa-file-text"></i> DOCUMENTAÇÃO</a>
+                    <a id="link-pessoas" href="#" target="_blank" class="link-card"><i class="fa fa-users"></i> FRCR-047 CONTROLE DE ACESSO DE PESSOAS E VEÍCULOS</a>
+                    <a id="link-seguranca" href="#" target="_blank" class="link-card"><i class="fa fa-shield"></i> FRCR-048 INSPENÇÃO DE EQUIPAMENTOS DE. SEGURANÇA</a>
+                    <a id="link-insp-boxes" href="#" target="_blank" class="link-card"><i class="fa fa-search"></i> FRCR-049 INSPEÇÃO DE BOX</a>
+                    <a id="link-equipamentos" href="#" target="_blank" class="link-card"><i class="fa fa-lock"></i> FRCR- 051 ENTRADA E SAÍDA DE MATERIAIS E EQUIPAMENTOS</a>
+                    <a id="link-lacres" href="#" target="_blank" class="link-card"><i class="fa fa-lock"></i> FRCR- 052 CONTROLE DE DISTRIBUÍÇÃO DE  LACRES</a>
+                    <a id="link-veiculos" href="#" target="_blank" class="link-card"><i class="fa fa-truck"></i> FRCR-054 ENTRADA E SAIDA  VEÍCULO E CARGA</a>
+                    <a id="link-controle-veic" href="#" target="_blank" class="link-card"><i class="fa fa-car"></i> FRCR-055 CONTROLE DE VEÍCULOS</a>
+                    <a id="link-chaves" href="#" target="_blank" class="link-card"><i class="fa fa-key"></i> FRCR-114 CONTROLE DE CHAVES</a>
+                    <a id="link-ocorrencias" href="#" target="_blank" class="link-card"><i class="fa fa-exclamation-triangle"></i> FRCR-173 RELATÓRIOS DE OCORRÊNCIAS</a>
+                    <a id="link-int-boxes" href="#" target="_blank" class="link-card"><i class="fa fa-check-square"></i>FRCR-303 CONTROLE DE INTEGRIDADE DE  LACRAMENTO DOS BOXES</a>              
+		    <a id="link-checklist" href="#" target="_blank" class="link-card"><i class="fa fa-list-check"></i> FRCR-304 CHECK LIST FORMULÁRIOS DE SEGURANÇA</a>
+                    <a id="link-lacresaco" href="#" target="_blank" class="link-card"><i class="fa fa-link"></i> FRCR-305 CONTROLE DE DISTRIBUÍÇÃO LACRES DE AÇO</a>
+                    <a id="link-liberacao" href="#" target="_blank" class="link-card"><i class="fa fa-link"></i> FRCR-306 LIBERAÇÃO DE LINK ACOMPANHAMENTO PROCESSO</a>
+                                                     
+
+                </div>
+                <button class="btn-back" onclick="goHome()">VOLTAR PARA UNIDADES</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importando o Script externo -->
+    <script src="script.js"></script>
+</body>
+</html>
